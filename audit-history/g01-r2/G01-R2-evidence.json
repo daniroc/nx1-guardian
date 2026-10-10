@@ -1,0 +1,188 @@
+{
+  "RESULT": "BLOCKED_EVIDENCE_GAP",
+  "CURRENT_MAIN_HEAD": "4fe297ad601e97d70589c42ef24ac9399cd951ac",
+  "CURRENT_MAIN_TREE": "a280aea5a5be754bc55bf843e99aa801073f5908",
+  "PREVIOUS_BASELINE_DIVERGENCE": {
+    "previous": "44ea6fee49fa13d3a10b8081b71c7f368480972d",
+    "commonAncestor": "16cefe112ce47742ff5385b2b6196b1b8adf0ecb",
+    "mainAhead": 243,
+    "previousAhead": 28,
+    "remoteComparisonFilesReturned": 300
+  },
+  "FINDING_MATRIX": [
+    [
+      "DirectToolRoutes",
+      "STILL_PRESENT",
+      "CRITICAL"
+    ],
+    [
+      "ExistingProviderWrites",
+      "NEW_VARIANT_FOUND",
+      "CRITICAL"
+    ],
+    [
+      "CoarseCredentialScopes",
+      "STILL_PRESENT",
+      "CRITICAL"
+    ],
+    [
+      "WritableChronicle",
+      "STILL_PRESENT",
+      "CRITICAL"
+    ],
+    [
+      "ProviderReportedUsage",
+      "STILL_PRESENT",
+      "CRITICAL"
+    ],
+    [
+      "UnboundedGitHubBodyRead",
+      "STILL_PRESENT",
+      "HIGH"
+    ]
+  ],
+  "B01_B08_MATRIX": [
+    {
+      "id": "B01",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B02",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B03",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B04",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B05",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B06",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B07",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    },
+    {
+      "id": "B08",
+      "classification": "STILL_PRESENT",
+      "severity": "CRITICAL",
+      "interpretation": "Unresolved Guardian assurance prerequisite; ordinary domain guards may be implemented and tested",
+      "ownership": "See current-main revalidation matrix"
+    }
+  ],
+  "NEW_FINDINGS": [
+    "OnboardingJsonBodyUnbounded",
+    "NonuniformWholeReaderAndCancellationBounds",
+    "IntegratedLearningStoragePushManagementAuthorityExpansion",
+    "KnownQ15CFailureReproduced",
+    "AuditSetupSharedGitBookkeepingDeviation"
+  ],
+  "RESOLVED_FINDINGS": [],
+  "SUPERSEDED_FINDINGS": [],
+  "THREAT_MATRIX": "T01-T21 in markdown report",
+  "CONTROL_MATRIX": "C01-C10 in markdown report",
+  "DIRECT_TOOL_ROUTES": {
+    "staticServerModules": 125,
+    "pageServerModules": 19,
+    "backgroundCandidates": 24,
+    "inventory": "../../../G01-R2-inventory.json",
+    "status": "NotRuntimeAttestation"
+  },
+  "PROVIDER_WRITES": "GitHub;ManagementCRUD;FirebaseAuthFirestoreStorageSecretManager;ClassroomLRS;FaroleiroFCM;ConfiguredContactDelivery",
+  "CREDENTIAL_SCOPE_MAP_NO_VALUES": "79 source selectors; live IAM/rotation unverified; markdown scope map",
+  "CHRONICLE_STATUS": "WritableCanonicalFileStore;DomainEventsAndSnapshotsNotIndependentWORM",
+  "USAGE_ACCOUNTING_STATUS": "LocalBytesAndProviderReportedTokens;ExactAccountQuotaUnverified",
+  "GITHUB_BODY_BOUND_STATUS": "CommonAndOnboardingUnbounded;CurrentnessBoundedTestsPassed;ProvisioningStreamBoundedWithAbortDependency",
+  "ADMIN_ISOLATION": "ExternalGuardianAuthorityUnverified",
+  "KILL_DISPATCH_ORDERING": "NoIndependentGlobalFenceVerified",
+  "QUOTA_CONTROLS": "ApplicationLimitsExist;DurableGlobalBudgetNotVerified",
+  "DEPENDENCY_SECURITY": {
+    "installation": "Offline frozen lock, ignore scripts, 246 reused, zero downloaded",
+    "build": "packages:build passed",
+    "vulnerabilityAudit": "AUTO_REVIEW_REJECTED_PENDING_EXPLICIT_METADATA_EGRESS_APPROVAL",
+    "registry": "https://registry.npmjs.org/",
+    "localGraph": "../../../G01-R2-production-dependency-graph.json",
+    "lockSha256": "3aeff1b09f55767254aa1db99690ce80e7b81bf93fbb23dad009f69996b3f67b"
+  },
+  "SECRET_SCAN": {
+    "trackedFiles": 2478,
+    "patternClasses": 4,
+    "candidates": 0,
+    "assurance": "PatternBasedOnly;NotProofOfAllSecretsAbsent"
+  },
+  "FOCUSED_TESTS": {
+    "runs": [
+      {
+        "name": "core",
+        "tests": 22,
+        "pass": 22,
+        "fail": 0
+      },
+      {
+        "name": "integration",
+        "tests": 87,
+        "pass": 87,
+        "fail": 0
+      },
+      {
+        "name": "newArchitecture",
+        "tests": 22,
+        "pass": 22,
+        "fail": 0
+      },
+      {
+        "name": "providersAndSubmissions",
+        "tests": 67,
+        "pass": 66,
+        "fail": 1
+      }
+    ],
+    "total": 198,
+    "pass": 197,
+    "fail": 1,
+    "skip": 0,
+    "cancel": 0,
+    "failure": "Q15C preserves byte-identical Q15B emitters with reads, bindings and local actions when submissions are absent",
+    "probe": "Fake common-client body elapsed 76ms with configured timeout5ms"
+  },
+  "INDEPENDENCE": "SameAssistantToolingChain;NoExternalAttestation",
+  "USER_DECISIONS_PENDING": [
+    "StandaloneRepository",
+    "ExternalOwnerAndReviewer",
+    "OfflineLab",
+    "ApprovedTestPoliciesAndBudgets",
+    "ExplicitProductionDependencyMetadataEgressToRegistry"
+  ],
+  "G02A_READINESS": "NOT_AUTHORIZED",
+  "NEXT_SAFE_STEP": "ResolveMetadataEgressApprovalAndExternalEvidenceReview",
+  "SECURITY_PASS": false
+}

@@ -1,0 +1,85 @@
+{
+  "inert": true,
+  "networkCalls": 0,
+  "realCredentials": 0,
+  "checks": 4,
+  "securityInvariantFailures": 4,
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "P1",
+      "invariant": "Unauthenticated dispatch must not modify another active execution or remove its controller",
+      "expectedSecurityInvariantPassed": false,
+      "before": "DISPATCHING",
+      "attack": {
+        "status": "UNKNOWN",
+        "reason": "IDENTITY_INVALID"
+      },
+      "after": "UNKNOWN",
+      "terminal": true,
+      "durable": "STOP_DURABLE",
+      "enforced": "STOP_ENFORCED",
+      "beforeRelease": {
+        "actualActive": true,
+        "signalAborted": false
+      },
+      "legitimate": {
+        "status": "UNKNOWN",
+        "reason": "EMERGENCY_ACTIVE"
+      },
+      "actualCompleted": 1
+    },
+    {
+      "id": "F02",
+      "priority": "P1",
+      "invariant": "STOP_ENFORCED must not be returned while another worker has an unconfirmed live effect",
+      "expectedSecurityInvariantPassed": false,
+      "durable": "STOP_DURABLE",
+      "enforced": "STOP_ENFORCED",
+      "pending": "DISPATCHING",
+      "originalStillActive": true,
+      "signalAborted": false,
+      "outcome": {
+        "status": "UNKNOWN",
+        "reason": "EMERGENCY_ACTIVE"
+      },
+      "completedAfterEnforced": 1
+    },
+    {
+      "id": "F03",
+      "priority": "P1",
+      "invariant": "External approval must bind the specific project/repository/policy/service instance",
+      "expectedSecurityInvariantPassed": false,
+      "authorizedA": "OPENED",
+      "replayedB": "OPENED",
+      "policyDigestsDiffer": true,
+      "effectB": {
+        "status": "COMPLETE",
+        "bytes": 14
+      },
+      "completedB": 1,
+      "recoveredA": "RECOVERED",
+      "recoveredB": "RECOVERED",
+      "lockedB": false,
+      "requestSignedFields": [
+        "action",
+        "audience",
+        "epoch",
+        "expires",
+        "id",
+        "issued",
+        "kind",
+        "nx1Version",
+        "session"
+      ]
+    },
+    {
+      "id": "F04",
+      "priority": "P2",
+      "invariant": "Reject noncanonical base64url signature representation",
+      "expectedSecurityInvariantPassed": false,
+      "accepted": true,
+      "identicalDecodedBytes": true
+    }
+  ]
+}

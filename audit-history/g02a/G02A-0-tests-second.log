@@ -1,0 +1,547 @@
+
+> @nx1/guardian-lab@0.0.1 test C:\Users\DaniR\.codex\visualizations\2026\10\09\01a12251-4e43-7ce2-8dc5-e4b92fff3ee9\nx1-guardian
+> node --permission --allow-fs-read=. --allow-fs-write=.lab-tests --allow-fs-write=.lab-tests/* --test --test-isolation=none --test-concurrency=1 dist/test/*.test.js
+
+✖ positive: authenticated read has witnessed durable reservation and synthetic receipt (23.7439ms)
+✖ A01 A02 A05: malicious codex cannot exercise administration/secrets/deploy (15.0412ms)
+✖ A01 A02 A05: malicious chatgpt cannot exercise administration/secrets/deploy (18.1505ms)
+✖ A03 A04 A20: collusion, forged approvals and duplicate reviewer denied (16.6907ms)
+✖ A06: repository/log/web prompt text stays untrusted while allowed read remains bounded (17.6895ms)
+✖ A05 A26: closed canonical schemas reject mixed control, duplicate keys, oversized/version/unsafe inputs (17.9117ms)
+✖ A04 A09: wrong key, revoked identity and expired credential fail (16.562ms)
+✖ A07: duplicate IDs, nonces, logical intents and replay after restart deny (15.3033ms)
+✖ A07 A12: concurrent admissions across two connections permit one reservation only (18.2823ms)
+✖ A08 A21: project/repository/branch/scope/parent substitution denied (19.2511ms)
+✖ A09: stolen or modified grant cannot dispatch as another synthetic actor (17.6177ms)
+✖ A10: downgraded digest/epoch or emergency epoch denied (17.4662ms)
+✖ A11 A22: durable stop fences reserved grant, survives restart, recovery never revives old session (14.676ms)
+✖ A11 A22 A27: stop during stalled dispatch with ignored cancellation reports durable not enforced (15.6868ms)
+✖ A12 A13 A23: four iterations aggregate parent/child budget; fifth remains terminal after restart (14.2772ms)
+✖ A13 A23: cost/token maxima and unmeasurable synthetic reservation deny (15.9117ms)
+✖ A12 A23: sixteen signed forbidden attempts consume admission budget including retries (17.1231ms)
+✖ A14: lost receipt holds reservation and never auto retries after restart (14.7944ms)
+✖ A16 A24: append-only fixture rejects SQL updates and witness detects ledger corruption (17.0147ms)
+✖ A16 A24: reordered/truncated audit and old witness are detected (17.2909ms)
+✖ A17 A22: witness persistence failure returns unconfirmed stop and never automatically clears fence (18.2099ms)
+✖ A17 A25: unavailable mandatory witness denies effect and preserves committed reservation (19.2961ms)
+✖ A17: missing policy, invalid clock and stale checkpoint fail closed (15.6779ms)
+✖ A12: session deadline and stale lease bound work; expired reservation cannot be reused (16.6827ms)
+✖ A27: stall bounded complete response retains unknown effect accounting (16.9147ms)
+✖ A27: oversize bounded complete response retains unknown effect accounting (13.7865ms)
+✖ A27: too-many-chunks bounded complete response retains unknown effect accounting (18.4514ms)
+✖ property: 32 deterministic mutations never produce unauthorized effects (14.3425ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 0
+ℹ fail 28
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 507.1204
+
+✖ failing tests:
+
+test at dist\test\core.test.js:37:1
+✖ positive: authenticated read has witnessed durable reservation and synthetic receipt (23.7439ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:38:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:52:5
+✖ A01 A02 A05: malicious codex cannot exercise administration/secrets/deploy (15.0412ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:53:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:52:5
+✖ A01 A02 A05: malicious chatgpt cannot exercise administration/secrets/deploy (18.1505ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:53:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:62:1
+✖ A03 A04 A20: collusion, forged approvals and duplicate reviewer denied (16.6907ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:63:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:74:1
+✖ A06: repository/log/web prompt text stays untrusted while allowed read remains bounded (17.6895ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:75:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:87:1
+✖ A05 A26: closed canonical schemas reject mixed control, duplicate keys, oversized/version/unsafe inputs (17.9117ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:88:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:99:1
+✖ A04 A09: wrong key, revoked identity and expired credential fail (16.562ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:100:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:118:1
+✖ A07: duplicate IDs, nonces, logical intents and replay after restart deny (15.3033ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:119:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:133:1
+✖ A07 A12: concurrent admissions across two connections permit one reservation only (18.2823ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:134:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:148:1
+✖ A08 A21: project/repository/branch/scope/parent substitution denied (19.2511ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:149:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:159:1
+✖ A09: stolen or modified grant cannot dispatch as another synthetic actor (17.6177ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:160:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:171:1
+✖ A10: downgraded digest/epoch or emergency epoch denied (17.4662ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:172:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:181:1
+✖ A11 A22: durable stop fences reserved grant, survives restart, recovery never revives old session (14.676ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:182:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:201:1
+✖ A11 A22 A27: stop during stalled dispatch with ignored cancellation reports durable not enforced (15.6868ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:202:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:218:1
+✖ A12 A13 A23: four iterations aggregate parent/child budget; fifth remains terminal after restart (14.2772ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:219:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:238:1
+✖ A13 A23: cost/token maxima and unmeasurable synthetic reservation deny (15.9117ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:240:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:249:1
+✖ A12 A23: sixteen signed forbidden attempts consume admission budget including retries (17.1231ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:250:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:261:1
+✖ A14: lost receipt holds reservation and never auto retries after restart (14.7944ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:262:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:277:1
+✖ A16 A24: append-only fixture rejects SQL updates and witness detects ledger corruption (17.0147ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:278:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:289:1
+✖ A16 A24: reordered/truncated audit and old witness are detected (17.2909ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:290:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:301:1
+✖ A17 A22: witness persistence failure returns unconfirmed stop and never automatically clears fence (18.2099ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:302:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:314:1
+✖ A17 A25: unavailable mandatory witness denies effect and preserves committed reservation (19.2961ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:315:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:327:1
+✖ A17: missing policy, invalid clock and stale checkpoint fail closed (15.6779ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:328:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:352:1
+✖ A12: session deadline and stale lease bound work; expired reservation cannot be reused (16.6827ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:353:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:368:5
+✖ A27: stall bounded complete response retains unknown effect accounting (16.9147ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:369:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:368:5
+✖ A27: oversize bounded complete response retains unknown effect accounting (13.7865ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:369:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:368:5
+✖ A27: too-many-chunks bounded complete response retains unknown effect accounting (18.4514ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:369:19)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+
+test at dist\test\core.test.js:381:1
+✖ property: 32 deterministic mutations never produce unauthorized effects (14.3425ms)
+  Error [ERR_ACCESS_DENIED]: fsync API is disabled when Permission Model is enabled.
+      at fsyncSync (node:fs:1343:11)
+      at FileWitness.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:36:13)
+      at Object.advance (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:20:57)
+      at Store.initialize (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:75:22)
+      at new Guardian (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/guardian.js:21:20)
+      at fixture (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:22:20)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:382:15)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18) {
+    code: 'ERR_ACCESS_DENIED',
+    permission: '',
+    resource: ''
+  }
+ ELIFECYCLE  Test failed. See above for more details.

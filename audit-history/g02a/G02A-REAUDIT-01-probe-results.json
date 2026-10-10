@@ -1,0 +1,102 @@
+{
+  "schema": "guardian-reaudit-probes/1",
+  "nx1Version": "1.3",
+  "networkRequests": 0,
+  "realCredentials": 0,
+  "protectedCheckoutWrites": 0,
+  "groups": 10,
+  "passed": 8,
+  "violations": 2,
+  "harnessErrors": 0,
+  "probes": [
+    {
+      "id": "P01",
+      "area": "F01",
+      "status": "PASS",
+      "attempts": 64,
+      "ownerAttempts": 1,
+      "ownerControllerRetained": true
+    },
+    {
+      "id": "P02",
+      "area": "F01 failure/SQL contention",
+      "status": "PASS",
+      "busyWriterDenied": true,
+      "ownerUnchanged": true
+    },
+    {
+      "id": "P03",
+      "area": "F02 shared pending/restart/recovery",
+      "status": "PASS",
+      "completedAfterDurableStop": 1,
+      "staleGrantEffects": 0,
+      "unknownHoldsAfterRestart": true
+    },
+    {
+      "id": "P04",
+      "area": "F02 acknowledgement validation",
+      "status": "VIOLATION",
+      "returned": "STOP_ENFORCED",
+      "asyncFalseAcknowledgements": true,
+      "finding": "R02",
+      "severity": "P2",
+      "invariant": "Only explicit primitive true acknowledgements should support STOP_ENFORCED",
+      "scope": "Malformed trusted fake-adapter return; no active ledger effect or demonstrated unauthorized effect"
+    },
+    {
+      "id": "P05",
+      "area": "F03 context/substitution/canonicalization",
+      "status": "PASS",
+      "rejected": 19
+    },
+    {
+      "id": "P06",
+      "area": "F03 emergency recovery",
+      "status": "PASS",
+      "crossPolicyDenied": true,
+      "oldLockEpochDenied": true,
+      "reopenApprovalValidOnlyForOriginalContext": true
+    },
+    {
+      "id": "P07",
+      "area": "F04 crypto-before-verification instrumentation",
+      "status": "PASS",
+      "vectors": 370,
+      "tailAliasesRejectedBeforeVerify": 240,
+      "malformedRejectedBeforeVerify": 96,
+      "validSynthetic": 16,
+      "rfc8032EmptyMessageRawVector": true,
+      "domainSeparation": true
+    },
+    {
+      "id": "P08",
+      "area": "audit missing entry/failure recovery",
+      "status": "PASS",
+      "truncatedChainDetectedAcrossReopen": true
+    },
+    {
+      "id": "P09",
+      "area": "F01 mandatory-witness failure at dispatch intent",
+      "status": "PASS",
+      "providerAttempts": 0,
+      "unwitnessedIntentFailClosedAcrossReopen": true
+    },
+    {
+      "id": "P10",
+      "area": "early emergency evidence-read failure",
+      "status": "VIOLATION",
+      "finding": "R01",
+      "severity": "P2",
+      "error": "Error: READ_UNAVAILABLE",
+      "ownerSignalAborted": false,
+      "durableLock": false,
+      "activeResult": {
+        "status": "COMPLETE",
+        "bytes": 1
+      },
+      "completed": 1,
+      "invariant": "Documented STOP_UNCONFIRMED local fallback does not cover preliminary inspect outage",
+      "scope": "Signature valid; current authority context unavailable, so safe cached-context fallback requires separate design; no forged-command authority demonstrated"
+    }
+  ]
+}

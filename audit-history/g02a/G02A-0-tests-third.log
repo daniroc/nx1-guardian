@@ -1,0 +1,67 @@
+
+> @nx1/guardian-lab@0.0.1 test C:\Users\DaniR\.codex\visualizations\2026\10\09\01a12251-4e43-7ce2-8dc5-e4b92fff3ee9\nx1-guardian
+> node --permission --allow-fs-read=. --allow-fs-write=.lab-tests --allow-fs-write=.lab-tests/* --test --test-isolation=none --test-concurrency=1 dist/test/*.test.js
+
+✔ positive: authenticated read has witnessed durable reservation and synthetic receipt (104.7299ms)
+✔ A01 A02 A05: malicious codex cannot exercise administration/secrets/deploy (86.4707ms)
+✔ A01 A02 A05: malicious chatgpt cannot exercise administration/secrets/deploy (92.6947ms)
+✔ A03 A04 A20: collusion, forged approvals and duplicate reviewer denied (33.7917ms)
+✔ A06: repository/log/web prompt text stays untrusted while allowed read remains bounded (81.4787ms)
+✔ A05 A26: closed canonical schemas reject mixed control, duplicate keys, oversized/version/unsafe inputs (101.481ms)
+✔ A04 A09: wrong key, revoked identity and expired credential fail (125.2499ms)
+✔ A07: duplicate IDs, nonces, logical intents and replay after restart deny (94.7949ms)
+✔ A07 A12: concurrent admissions across two connections permit one reservation only (211.8359ms)
+✔ A08 A21: project/repository/branch/scope/parent substitution denied (78.4702ms)
+✔ A09: stolen or modified grant cannot dispatch as another synthetic actor (53.7637ms)
+✔ A10: downgraded digest/epoch or emergency epoch denied (68.9276ms)
+✖ A11 A22: durable stop fences reserved grant, survives restart, recovery never revives old session (139.2041ms)
+✔ A11 A22 A27: stop during stalled dispatch with ignored cancellation reports durable not enforced (104.6134ms)
+✔ A12 A13 A23: four iterations aggregate parent/child budget; fifth remains terminal after restart (184.5185ms)
+✔ A13 A23: cost/token maxima and unmeasurable synthetic reservation deny (110.7888ms)
+✔ A12 A23: sixteen signed forbidden attempts consume admission budget including retries (202.626ms)
+✔ A14: lost receipt holds reservation and never auto retries after restart (78.5017ms)
+✖ A16 A24: append-only fixture rejects SQL updates and witness detects ledger corruption (29.6449ms)
+✔ A16 A24: reordered/truncated audit and old witness are detected (42.2598ms)
+✔ A17 A22: witness persistence failure returns unconfirmed stop and never automatically clears fence (40.1074ms)
+✔ A17 A25: unavailable mandatory witness denies effect and preserves committed reservation (37.7322ms)
+✔ A17: missing policy, invalid clock and stale checkpoint fail closed (81.5197ms)
+✔ A12: session deadline and stale lease bound work; expired reservation cannot be reused (65.5362ms)
+✔ A27: stall bounded complete response retains unknown effect accounting (89.5816ms)
+✔ A27: oversize bounded complete response retains unknown effect accounting (59.6407ms)
+✔ A27: too-many-chunks bounded complete response retains unknown effect accounting (84.4962ms)
+✔ property: 32 deterministic mutations never produce unauthorized effects (364.0593ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 26
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2886.421
+
+✖ failing tests:
+
+test at dist\test\core.test.js:181:1
+✖ A11 A22: durable stop fences reserved grant, survives restart, recovery never revives old session (139.2041ms)
+  Error: CONCURRENCY_LIMIT
+      at Object.allowed (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:31:15)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:195:11)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+
+test at dist\test\core.test.js:277:1
+✖ A16 A24: append-only fixture rejects SQL updates and witness detects ledger corruption (29.6449ms)
+  GuardianError: EVIDENCE_UNAVAILABLE
+      at fail (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/contracts.js:11:36)
+      at Store.inspect (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/src/store.js:106:13)
+      at Object.request (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:27:326)
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:283:26)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    code: 'EVIDENCE_UNAVAILABLE'
+  }
+ ELIFECYCLE  Test failed. See above for more details.

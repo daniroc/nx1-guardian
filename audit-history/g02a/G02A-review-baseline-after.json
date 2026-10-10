@@ -1,0 +1,249 @@
+{
+  "head": "UNBORN",
+  "gitTree": "UNAVAILABLE_NO_COMMIT",
+  "branch": "main",
+  "fileCount": 20,
+  "artifactManifestSha256": "6c1b8a72d4e29bcd566e1b314b0209fa3b974c7b62b6cd27a89414d00db5c249",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "16eaf5553521dc523c4716a88207d525fb8f88db1634f66080086434be35c063"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "32f526f60da25582ce4f62f9e78d4df2778ef96d3134dea8ce7932c481532e0a"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "fa1e0ebfaba49d49f1c625c08c4c553dba708e5c2154bc696c2e26f88e95b6b3"
+    },
+    {
+      "path": "docs/dependencies.md",
+      "sha256": "0e5c803380870225fbcccbfaae9b4f193a6bb539ac8bbdde998fff072b87edf8"
+    },
+    {
+      "path": "docs/evidence.json",
+      "sha256": "59894af3661b1ef17ec3c06371e41de2541f84de85d53f04353da7cb78afd5e5"
+    },
+    {
+      "path": "docs/risks.md",
+      "sha256": "1ca6c7cab84e2781ee7f8130e9c8be25ea8be6c4af704a989b74582e72f3f012"
+    },
+    {
+      "path": "docs/traceability.md",
+      "sha256": "3c327d31edcda3c4f390fe09ec2d8ed00a961d249e1b6ee229b1794a098e2471"
+    },
+    {
+      "path": "docs/validation.md",
+      "sha256": "fdf03e2583bd4d1b3f3a26a47c601f8b7953eebcb34bf965aa89f5bc501ccb2e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "52b405202b0fa33768bc832c52e7662daefbfb5f4207d8db4327bac40127c72a"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48"
+    },
+    {
+      "path": "README.md",
+      "sha256": "781cf0bb88ca91d086967a7cddc2150878cea0540fb3815e34d7b669879b2d78"
+    },
+    {
+      "path": "scripts/evidence.mjs",
+      "sha256": "e6db68c1acce2a832513c5f9ead5f6064d27940064b1b871ea8628972b1ae3be"
+    },
+    {
+      "path": "scripts/lint.mjs",
+      "sha256": "a961ade9046b58452a6616be7535f407006630cdbb298903b70f64dfd154f1e9"
+    },
+    {
+      "path": "src/contracts.ts",
+      "sha256": "63ac96a7656f32f9ec367e8ac31f9d4e45f7a7f5e9def23bac32ed7afff49231"
+    },
+    {
+      "path": "src/fake-provider.ts",
+      "sha256": "7a18d27cd73ceb85c98eedcdf6554cc8d7363fc5033672f3a99c9d6302a76e14"
+    },
+    {
+      "path": "src/guardian.ts",
+      "sha256": "f1d5e64989914d51ec831a8d0cb5fa773c8b565c65efb314222cbec6be8925ca"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "src/store.ts",
+      "sha256": "b998672db4bd0fee30a2fc5bd25cebfaceeba37d490ae7a5e7e0de185b8c4164"
+    },
+    {
+      "path": "test/core.test.ts",
+      "sha256": "4537819686e54d8fb1cb698b9d950fcf5fb2d15abe1b8d7e573b9c22226b188d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cc8cad264b7c09fd7c2b6ebab9bbd31cba9549dc3c50dc49ab2c2a969e4e7562"
+    }
+  ],
+  "priorEvidenceHashesMatch": true,
+  "hashMatches": [
+    {
+      "path": ".gitignore",
+      "match": true
+    },
+    {
+      "path": "docs/architecture.md",
+      "match": true
+    },
+    {
+      "path": "docs/contracts.md",
+      "match": true
+    },
+    {
+      "path": "docs/dependencies.md",
+      "match": true
+    },
+    {
+      "path": "docs/risks.md",
+      "match": true
+    },
+    {
+      "path": "docs/traceability.md",
+      "match": true
+    },
+    {
+      "path": "docs/validation.md",
+      "match": true
+    },
+    {
+      "path": "package.json",
+      "match": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "match": true
+    },
+    {
+      "path": "README.md",
+      "match": true
+    },
+    {
+      "path": "scripts/evidence.mjs",
+      "match": true
+    },
+    {
+      "path": "scripts/lint.mjs",
+      "match": true
+    },
+    {
+      "path": "src/contracts.ts",
+      "match": true
+    },
+    {
+      "path": "src/fake-provider.ts",
+      "match": true
+    },
+    {
+      "path": "src/guardian.ts",
+      "match": true
+    },
+    {
+      "path": "src/index.ts",
+      "match": true
+    },
+    {
+      "path": "src/store.ts",
+      "match": true
+    },
+    {
+      "path": "test/core.test.ts",
+      "match": true
+    },
+    {
+      "path": "tsconfig.json",
+      "match": true
+    }
+  ],
+  "sourceDistParity": [
+    {
+      "path": "dist/src/contracts.js",
+      "matches": true,
+      "sha256": "4203109fae4ac0b19ff0ae9466a851b9d7aaf4451a93417b71ebacfe2b4cb0f2"
+    },
+    {
+      "path": "dist/src/contracts.d.ts",
+      "matches": true,
+      "sha256": "239bbf1ebdd555aea3e54ce92df679e81385dbbb4451d0d341813e467fb88510"
+    },
+    {
+      "path": "dist/src/store.js",
+      "matches": true,
+      "sha256": "db25ebc68765d886e2d19878c6733b094aa4698bf8cf9289a619171e36bcbdde"
+    },
+    {
+      "path": "dist/src/store.d.ts",
+      "matches": true,
+      "sha256": "161cd40cea25a22980e3d5a40ec79defad9a768acd8346981fb73938106808fd"
+    },
+    {
+      "path": "dist/src/guardian.js",
+      "matches": true,
+      "sha256": "8ed3293cc9c1481b3fb55e4e2b7358d5060c33f58cd1eb99bdce7258678a2177"
+    },
+    {
+      "path": "dist/src/guardian.d.ts",
+      "matches": true,
+      "sha256": "65f0bb8878c2fa4cef8cccdc2304821c532444dedf1e756c06e0ece3a48d5e26"
+    },
+    {
+      "path": "dist/src/fake-provider.js",
+      "matches": true,
+      "sha256": "e816aae657b2cac54ba28b1955865749118c04a7674d515ccbf18800d499cb39"
+    },
+    {
+      "path": "dist/src/fake-provider.d.ts",
+      "matches": true,
+      "sha256": "700b25c07d7794325f6f27bb8b3297fd3d72c64e65d79ea6877a6e9716ac8c59"
+    },
+    {
+      "path": "dist/src/index.js",
+      "matches": true,
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "dist/src/index.d.ts",
+      "matches": true,
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "dist/test/core.test.js",
+      "matches": true,
+      "sha256": "db2a4e8961034929e2bcbea75a0c1c169ccd73479d91eb7e252a42919990aba2"
+    },
+    {
+      "path": "dist/test/core.test.d.ts",
+      "matches": true,
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    }
+  ],
+  "sourceDistParityPass": true,
+  "dependencies": [
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "manifestSha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6"
+    },
+    {
+      "name": "@types/node",
+      "version": "26.1.0",
+      "manifestSha256": "4dfc18d676390f4971c5c8d7cfefa9d71a7cfa1d80c77c504791d5753b51126c"
+    },
+    {
+      "name": "undici-types",
+      "version": "8.3.0",
+      "manifestSha256": "fe5de6d50b3e426af5bbe08b9d83b6b3c5106d639ec28e5b90c79bfb1d7cddab"
+    }
+  ],
+  "preserved": true
+}

@@ -1,0 +1,5 @@
+
+> @nx1/guardian-lab@0.0.1 lint C:\Users\DaniR\.codex\visualizations\2026\10\09\01a12251-4e43-7ce2-8dc5-e4b92fff3ee9\nx1-guardian
+> node scripts/lint.mjs
+
+PASS: capability/type lint plus strict TypeScript compiler lint (noUnusedLocals/noUnusedParameters).

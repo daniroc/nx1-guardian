@@ -1,0 +1,131 @@
+{
+  "schema": "guardian-lab-evidence/1",
+  "nx1Version": "1.3",
+  "repository": "daniroc/nx1-guardian",
+  "head": "UNBORN",
+  "branch": "main",
+  "result": "LOCAL_CORE_PASS_PENDING_INDEPENDENT_REVIEW",
+  "tests": {
+    "executed": 35,
+    "passed": 35,
+    "failed": 0,
+    "skipped": 0
+  },
+  "commands": [
+    "pnpm install --offline --ignore-scripts",
+    "pnpm run typecheck",
+    "pnpm run lint",
+    "pnpm run build",
+    "pnpm test"
+  ],
+  "runtime": {
+    "node": "v24.21.0",
+    "sqlite": "3.53.4",
+    "openssl": "3.5.8",
+    "v8": "13.6.233.17-node.53"
+  },
+  "lockSha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "16eaf5553521dc523c4716a88207d525fb8f88db1634f66080086434be35c063"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "32f526f60da25582ce4f62f9e78d4df2778ef96d3134dea8ce7932c481532e0a"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "fa1e0ebfaba49d49f1c625c08c4c553dba708e5c2154bc696c2e26f88e95b6b3"
+    },
+    {
+      "path": "docs/dependencies.md",
+      "sha256": "0e5c803380870225fbcccbfaae9b4f193a6bb539ac8bbdde998fff072b87edf8"
+    },
+    {
+      "path": "docs/risks.md",
+      "sha256": "1ca6c7cab84e2781ee7f8130e9c8be25ea8be6c4af704a989b74582e72f3f012"
+    },
+    {
+      "path": "docs/traceability.md",
+      "sha256": "3c327d31edcda3c4f390fe09ec2d8ed00a961d249e1b6ee229b1794a098e2471"
+    },
+    {
+      "path": "docs/validation.md",
+      "sha256": "fdf03e2583bd4d1b3f3a26a47c601f8b7953eebcb34bf965aa89f5bc501ccb2e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "52b405202b0fa33768bc832c52e7662daefbfb5f4207d8db4327bac40127c72a"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48"
+    },
+    {
+      "path": "README.md",
+      "sha256": "781cf0bb88ca91d086967a7cddc2150878cea0540fb3815e34d7b669879b2d78"
+    },
+    {
+      "path": "scripts/evidence.mjs",
+      "sha256": "e6db68c1acce2a832513c5f9ead5f6064d27940064b1b871ea8628972b1ae3be"
+    },
+    {
+      "path": "scripts/lint.mjs",
+      "sha256": "a961ade9046b58452a6616be7535f407006630cdbb298903b70f64dfd154f1e9"
+    },
+    {
+      "path": "src/contracts.ts",
+      "sha256": "63ac96a7656f32f9ec367e8ac31f9d4e45f7a7f5e9def23bac32ed7afff49231"
+    },
+    {
+      "path": "src/fake-provider.ts",
+      "sha256": "7a18d27cd73ceb85c98eedcdf6554cc8d7363fc5033672f3a99c9d6302a76e14"
+    },
+    {
+      "path": "src/guardian.ts",
+      "sha256": "f1d5e64989914d51ec831a8d0cb5fa773c8b565c65efb314222cbec6be8925ca"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "src/store.ts",
+      "sha256": "b998672db4bd0fee30a2fc5bd25cebfaceeba37d490ae7a5e7e0de185b8c4164"
+    },
+    {
+      "path": "test/core.test.ts",
+      "sha256": "4537819686e54d8fb1cb698b9d950fcf5fb2d15abe1b8d7e573b9c22226b188d"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cc8cad264b7c09fd7c2b6ebab9bbd31cba9549dc3c50dc49ab2c2a969e4e7562"
+    }
+  ],
+  "logs": [
+    {
+      "path": "../G02A-0-typecheck.log",
+      "sha256": "d4524b68a07232d572ab6b2398edc1c4689225ab039c1b49204141dbb0b8c3c8"
+    },
+    {
+      "path": "../G02A-0-lint.log",
+      "sha256": "c318e2fe4271264e46265351a279bab85d84f0b29186f894f81f9a1d70b22f64"
+    },
+    {
+      "path": "../G02A-0-build.log",
+      "sha256": "70468072328b28887a15d64d15e0fad121d1c8c5fde73f4145fb499c930c4d8c"
+    },
+    {
+      "path": "../G02A-0-tests-final.log",
+      "sha256": "79a066f827f0f0acbe39fd260acbca72e9996cf55a0205ebbe64b9e032fd515b"
+    }
+  ],
+  "coverage": "A01-A27/T01-T21/C01-C10 explicitly classified; infrastructure/release controls remain gaps",
+  "remoteWrites": 0,
+  "realProviderRequests": 0,
+  "productionCredentialUse": 0,
+  "hostileExecutions": 0,
+  "autonomousAgentCommunication": 0,
+  "assurance": "Source/command and synthetic observer evidence only; no packet capture, external review or production security pass"
+}

@@ -1,0 +1,243 @@
+{
+  "schema": "guardian-reaudit-baseline/1",
+  "nx1Version": "1.3",
+  "head": "UNBORN",
+  "tree": null,
+  "branch": "main",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "16eaf5553521dc523c4716a88207d525fb8f88db1634f66080086434be35c063"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "631700f4d5158a6ccaee130cddd5fcc00faa109b4cc78235005398df01c2beb3"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "0523007cb4ef102af7ae06ad6d72bbadfbade2689c58b7e0c57d3ba54ec03ea6"
+    },
+    {
+      "path": "docs/dependencies.md",
+      "sha256": "0e5c803380870225fbcccbfaae9b4f193a6bb539ac8bbdde998fff072b87edf8"
+    },
+    {
+      "path": "docs/evidence.json",
+      "sha256": "59894af3661b1ef17ec3c06371e41de2541f84de85d53f04353da7cb78afd5e5"
+    },
+    {
+      "path": "docs/fix-01-evidence.json",
+      "sha256": "57976f367b7dd294094dcbcfe4c60ff9a32a2f56ad1a69a9c91a3cc3c737b72a"
+    },
+    {
+      "path": "docs/fix-01.md",
+      "sha256": "4b6d8ba0ebea9732192bc30344ba4f385d7192adc16b285dd05338c8cdfaba4c"
+    },
+    {
+      "path": "docs/risks.md",
+      "sha256": "6775a833ed76eb869b38ca741e834661ed446bb58a1033a687c19960ff9a7d58"
+    },
+    {
+      "path": "docs/traceability.md",
+      "sha256": "4c4aacdb1ea948b9879b39c9fc135872bedd25d1725936a8233d55edf3138807"
+    },
+    {
+      "path": "docs/validation.md",
+      "sha256": "a5297531d4efc2937810dd1a20704c6de33d9b54c779001273791e6e142c1cba"
+    },
+    {
+      "path": "package.json",
+      "sha256": "52b405202b0fa33768bc832c52e7662daefbfb5f4207d8db4327bac40127c72a"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48"
+    },
+    {
+      "path": "README.md",
+      "sha256": "72dbc9eb094996263b96c8176250b240c1b6b5f0816e71bf5d8239e54a18459c"
+    },
+    {
+      "path": "scripts/evidence.mjs",
+      "sha256": "e6db68c1acce2a832513c5f9ead5f6064d27940064b1b871ea8628972b1ae3be"
+    },
+    {
+      "path": "scripts/lint.mjs",
+      "sha256": "a961ade9046b58452a6616be7535f407006630cdbb298903b70f64dfd154f1e9"
+    },
+    {
+      "path": "src/contracts.ts",
+      "sha256": "45c80fdc6e4dc546273dbaa3e6ef6a8bc80e62f3005172c24fa70067ee8c3068"
+    },
+    {
+      "path": "src/fake-provider.ts",
+      "sha256": "7a18d27cd73ceb85c98eedcdf6554cc8d7363fc5033672f3a99c9d6302a76e14"
+    },
+    {
+      "path": "src/guardian.ts",
+      "sha256": "d2e0db4777e3f7830287dcde33867aa31198f2ff32fab91fedc709c672e432b9"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "src/store.ts",
+      "sha256": "108f80c615c4134816c56bcf7d06becfee0db743306f3f69bdb281fa52e983cf"
+    },
+    {
+      "path": "test/core.test.ts",
+      "sha256": "b86bd96d596f09f7607c01be3c63913d03097ddaee3ccecae0d758439fa94cec"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cc8cad264b7c09fd7c2b6ebab9bbd31cba9549dc3c50dc49ab2c2a969e4e7562"
+    }
+  ],
+  "artifactManifestSha256": "762f34556bf39a5ecb7785567c32a7d3f1248caccb572c662907b9f390ebea25",
+  "historical": [
+    {
+      "path": "G02A-0-security-review.md",
+      "sha256": "b4975c67ca5882511013d70e56e8c911874e828186a457448aed6f8e6b313d9a"
+    },
+    {
+      "path": "G02A-review-probe-results.json",
+      "sha256": "0740dbde1b0552f5ef6c7acbd0a44359eda361e96e265d3c5908e136a9bec4d9"
+    }
+  ],
+  "parity": [
+    {
+      "path": "dist/src/contracts.js",
+      "sha256": "20c3dd80d09620697be1e7a7820152118c03602aeedfbd551e4af46c5683fe25"
+    },
+    {
+      "path": "dist/src/contracts.d.ts",
+      "sha256": "d93a726e4ec093c7f3eb428e4d3f3004ee590e6bd42eefa84c27f1c479d9758d"
+    },
+    {
+      "path": "dist/src/store.js",
+      "sha256": "bdf065454ab40a6e714930ac3a620344130721f10c3e84e703e3712b4cfbf3ff"
+    },
+    {
+      "path": "dist/src/store.d.ts",
+      "sha256": "a5c072eb214cef29907555b8eec9ae17ac092e593dfb083ca19f63da16d1e79d"
+    },
+    {
+      "path": "dist/src/guardian.js",
+      "sha256": "b2b169a88217105a03c159d7fd9c5a9bbd863b1794cf18344d7466b2c87327d3"
+    },
+    {
+      "path": "dist/src/guardian.d.ts",
+      "sha256": "940633aabaac23564c9966d7f6bc3a806a992dd4745de65d67f3c03527454e2e"
+    },
+    {
+      "path": "dist/src/fake-provider.js",
+      "sha256": "e816aae657b2cac54ba28b1955865749118c04a7674d515ccbf18800d499cb39"
+    },
+    {
+      "path": "dist/src/fake-provider.d.ts",
+      "sha256": "700b25c07d7794325f6f27bb8b3297fd3d72c64e65d79ea6877a6e9716ac8c59"
+    },
+    {
+      "path": "dist/src/index.js",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "dist/src/index.d.ts",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "dist/test/core.test.js",
+      "sha256": "a4804cdb8a18fc48f5acd5fb2b39bf3a529a62701d920c6374b7a21ee1f1294e"
+    },
+    {
+      "path": "dist/test/core.test.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+    }
+  ],
+  "matrixRows": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A19",
+    "A20",
+    "A21",
+    "A22",
+    "A23",
+    "A24",
+    "A25",
+    "A26",
+    "A27",
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16",
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10"
+  ],
+  "dependencies": [
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "manifestSha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6"
+    },
+    {
+      "name": "@types/node",
+      "version": "26.1.0",
+      "manifestSha256": "4dfc18d676390f4971c5c8d7cfefa9d71a7cfa1d80c77c504791d5753b51126c"
+    },
+    {
+      "name": "undici-types",
+      "version": "8.3.0",
+      "manifestSha256": "fe5de6d50b3e426af5bbe08b9d83b6b3c5106d639ec28e5b90c79bfb1d7cddab"
+    }
+  ],
+  "lockSha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48",
+  "writesToProtectedCheckout": 0,
+  "runtime": {
+    "node": "v24.21.0",
+    "sqlite": "3.53.4",
+    "openssl": "3.5.8",
+    "v8": "13.6.233.17-node.53"
+  }
+}

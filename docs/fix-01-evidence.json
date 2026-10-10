@@ -1,0 +1,245 @@
+{
+  "schema": "guardian-fix-evidence/1",
+  "nx1Version": "1.3",
+  "iteration": "GUARDIAN-G02A-0-FIX-01",
+  "result": "LOCAL_FIXES_VALIDATED_PENDING_INDEPENDENT_REAUDIT",
+  "repository": "daniroc/nx1-guardian",
+  "head": "UNBORN",
+  "tree": null,
+  "branch": "main",
+  "baselineArtifactCount": 20,
+  "baselineSha256": "d34e8162bd24e63e259678991a5f00c397ea41ba44e5dbd195af80108a84e49e",
+  "changedFiles": [
+    "docs/architecture.md",
+    "docs/contracts.md",
+    "docs/fix-01.md",
+    "docs/risks.md",
+    "docs/traceability.md",
+    "docs/validation.md",
+    "README.md",
+    "src/contracts.ts",
+    "src/guardian.ts",
+    "src/store.ts",
+    "test/core.test.ts",
+    "docs/fix-01-evidence.json"
+  ],
+  "unrelatedArtifactsPreserved": true,
+  "historicalEvidencePreserved": true,
+  "tests": {
+    "executed": 48,
+    "passed": 48,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "originalNamesRetained": 35,
+    "newCases": 13
+  },
+  "red": {
+    "executed": 41,
+    "passed": 36,
+    "failed": 5
+  },
+  "matrixRows": 58,
+  "sourceDistParity": [
+    {
+      "path": "dist/src/contracts.js",
+      "sha256": "20c3dd80d09620697be1e7a7820152118c03602aeedfbd551e4af46c5683fe25",
+      "matches": true
+    },
+    {
+      "path": "dist/src/contracts.d.ts",
+      "sha256": "d93a726e4ec093c7f3eb428e4d3f3004ee590e6bd42eefa84c27f1c479d9758d",
+      "matches": true
+    },
+    {
+      "path": "dist/src/store.js",
+      "sha256": "bdf065454ab40a6e714930ac3a620344130721f10c3e84e703e3712b4cfbf3ff",
+      "matches": true
+    },
+    {
+      "path": "dist/src/store.d.ts",
+      "sha256": "a5c072eb214cef29907555b8eec9ae17ac092e593dfb083ca19f63da16d1e79d",
+      "matches": true
+    },
+    {
+      "path": "dist/src/guardian.js",
+      "sha256": "b2b169a88217105a03c159d7fd9c5a9bbd863b1794cf18344d7466b2c87327d3",
+      "matches": true
+    },
+    {
+      "path": "dist/src/guardian.d.ts",
+      "sha256": "940633aabaac23564c9966d7f6bc3a806a992dd4745de65d67f3c03527454e2e",
+      "matches": true
+    },
+    {
+      "path": "dist/src/fake-provider.js",
+      "sha256": "e816aae657b2cac54ba28b1955865749118c04a7674d515ccbf18800d499cb39",
+      "matches": true
+    },
+    {
+      "path": "dist/src/fake-provider.d.ts",
+      "sha256": "700b25c07d7794325f6f27bb8b3297fd3d72c64e65d79ea6877a6e9716ac8c59",
+      "matches": true
+    },
+    {
+      "path": "dist/src/index.js",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3",
+      "matches": true
+    },
+    {
+      "path": "dist/src/index.d.ts",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3",
+      "matches": true
+    },
+    {
+      "path": "dist/test/core.test.js",
+      "sha256": "a4804cdb8a18fc48f5acd5fb2b39bf3a529a62701d920c6374b7a21ee1f1294e",
+      "matches": true
+    },
+    {
+      "path": "dist/test/core.test.d.ts",
+      "sha256": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "matches": true
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "16eaf5553521dc523c4716a88207d525fb8f88db1634f66080086434be35c063"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "631700f4d5158a6ccaee130cddd5fcc00faa109b4cc78235005398df01c2beb3"
+    },
+    {
+      "path": "docs/contracts.md",
+      "sha256": "0523007cb4ef102af7ae06ad6d72bbadfbade2689c58b7e0c57d3ba54ec03ea6"
+    },
+    {
+      "path": "docs/dependencies.md",
+      "sha256": "0e5c803380870225fbcccbfaae9b4f193a6bb539ac8bbdde998fff072b87edf8"
+    },
+    {
+      "path": "docs/evidence.json",
+      "sha256": "59894af3661b1ef17ec3c06371e41de2541f84de85d53f04353da7cb78afd5e5"
+    },
+    {
+      "path": "docs/fix-01.md",
+      "sha256": "4b6d8ba0ebea9732192bc30344ba4f385d7192adc16b285dd05338c8cdfaba4c"
+    },
+    {
+      "path": "docs/risks.md",
+      "sha256": "6775a833ed76eb869b38ca741e834661ed446bb58a1033a687c19960ff9a7d58"
+    },
+    {
+      "path": "docs/traceability.md",
+      "sha256": "4c4aacdb1ea948b9879b39c9fc135872bedd25d1725936a8233d55edf3138807"
+    },
+    {
+      "path": "docs/validation.md",
+      "sha256": "a5297531d4efc2937810dd1a20704c6de33d9b54c779001273791e6e142c1cba"
+    },
+    {
+      "path": "package.json",
+      "sha256": "52b405202b0fa33768bc832c52e7662daefbfb5f4207d8db4327bac40127c72a"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48"
+    },
+    {
+      "path": "README.md",
+      "sha256": "72dbc9eb094996263b96c8176250b240c1b6b5f0816e71bf5d8239e54a18459c"
+    },
+    {
+      "path": "scripts/evidence.mjs",
+      "sha256": "e6db68c1acce2a832513c5f9ead5f6064d27940064b1b871ea8628972b1ae3be"
+    },
+    {
+      "path": "scripts/lint.mjs",
+      "sha256": "a961ade9046b58452a6616be7535f407006630cdbb298903b70f64dfd154f1e9"
+    },
+    {
+      "path": "src/contracts.ts",
+      "sha256": "45c80fdc6e4dc546273dbaa3e6ef6a8bc80e62f3005172c24fa70067ee8c3068"
+    },
+    {
+      "path": "src/fake-provider.ts",
+      "sha256": "7a18d27cd73ceb85c98eedcdf6554cc8d7363fc5033672f3a99c9d6302a76e14"
+    },
+    {
+      "path": "src/guardian.ts",
+      "sha256": "d2e0db4777e3f7830287dcde33867aa31198f2ff32fab91fedc709c672e432b9"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "5fed4d2a9f824b52ca228e780f2916f7db7439ef6a68e50722035152cf62a7f3"
+    },
+    {
+      "path": "src/store.ts",
+      "sha256": "108f80c615c4134816c56bcf7d06becfee0db743306f3f69bdb281fa52e983cf"
+    },
+    {
+      "path": "test/core.test.ts",
+      "sha256": "b86bd96d596f09f7607c01be3c63913d03097ddaee3ccecae0d758439fa94cec"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cc8cad264b7c09fd7c2b6ebab9bbd31cba9549dc3c50dc49ab2c2a969e4e7562"
+    }
+  ],
+  "logs": [
+    {
+      "path": "../G02A-FIX-01-typecheck.log",
+      "sha256": "d4524b68a07232d572ab6b2398edc1c4689225ab039c1b49204141dbb0b8c3c8"
+    },
+    {
+      "path": "../G02A-FIX-01-lint.log",
+      "sha256": "c318e2fe4271264e46265351a279bab85d84f0b29186f894f81f9a1d70b22f64"
+    },
+    {
+      "path": "../G02A-FIX-01-build.log",
+      "sha256": "70468072328b28887a15d64d15e0fad121d1c8c5fde73f4145fb499c930c4d8c"
+    },
+    {
+      "path": "../G02A-FIX-01-tests-final.log",
+      "sha256": "1beb80581426b9f42b38f3c268671821253c996fdffa5323d9a923378f21c724"
+    },
+    {
+      "path": "../G02A-FIX-01-red-build-clean.log",
+      "sha256": "70468072328b28887a15d64d15e0fad121d1c8c5fde73f4145fb499c930c4d8c"
+    },
+    {
+      "path": "../G02A-FIX-01-red-tests-clean.log",
+      "sha256": "a204c2a52347f2c39fdfd5ab3c633e3580323ea64de2ef1a549dee7d9a1fe2d5"
+    },
+    {
+      "path": "../G02A-FIX-01-tests-first.log",
+      "sha256": "0a052cbebc937c1bf365059fe999dd56d1d9744240d4ca48ca21c8a8c04b3bdb"
+    },
+    {
+      "path": "../G02A-FIX-01-tests-expanded.log",
+      "sha256": "828ddce057f72f0eeafb2be0fa17049600009fa457dcab4b49a5bd979868a4d0"
+    }
+  ],
+  "runtime": {
+    "node": "v24.21.0",
+    "sqlite": "3.53.4",
+    "openssl": "3.5.8",
+    "v8": "13.6.233.17-node.53"
+  },
+  "lockSha256": "92b8278d7721ce824b3a5835e8c8787444d4ce627e94c7c87b461e8c643b7c48",
+  "limitations": [
+    "Same assistant as implementer; independent re-audit required",
+    "Two instances/connections in one process; no parallel-process proof",
+    "Synthetic acknowledgement only; UNKNOWN remains pending",
+    "No host confinement, power-loss durability, real MFA, immutable external audit, TCB provenance or real quota guarantees",
+    "Ledger/witness clone copies logical authority"
+  ],
+  "networkRequests": 0,
+  "remoteWrites": 0,
+  "realProviderRequests": 0,
+  "productionCredentialUse": 0,
+  "nexusChanges": 0,
+  "readiness": "READY_FOR_INDEPENDENT_REAUDIT;G02A1_AND_PRODUCTION_BLOCKED"
+}

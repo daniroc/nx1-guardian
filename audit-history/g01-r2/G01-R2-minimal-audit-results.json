@@ -1,0 +1,973 @@
+{
+  "result": "AUDIT_COMPLETED_WITH_FINDINGS",
+  "baseline": "4fe297ad601e97d70589c42ef24ac9399cd951ac",
+  "registry": "https://registry.npmjs.org/-/npm/v1/security/advisories/bulk",
+  "payloadSha256": "695af91d76516cfcaf407983553ace401840fd330c9f6e890223155e23abc903",
+  "payloadBytes": 10640,
+  "metadataTransmitted": [
+    "public package names",
+    "exact public package versions"
+  ],
+  "requestsSent": 2,
+  "responseStatuses": [
+    200,
+    200
+  ],
+  "uniquePackageNames": 328,
+  "exactVersionPairs": 356,
+  "applicableAdvisoryRecords": 24,
+  "uniqueAdvisoryIds": 24,
+  "affectedPackageNames": 12,
+  "affectedExactVersionPairs": 12,
+  "severitiesByApplicableAdvisoryRecord": {
+    "critical": 0,
+    "high": 13,
+    "moderate": 8,
+    "low": 3,
+    "info": 0
+  },
+  "validation": "Offline revalidation accepts advisory name omitted when uniquely bound by requested top-level package key; if present it must match. Response SHA256 verified. No additional requests.",
+  "responseDeviation": "HTTP Content-Type and individual advisory name fields absent. The initial conservative validators rejected these. Bounded saved JSON was independently validated offline.",
+  "advisories": [
+    {
+      "package": "@grpc/grpc-js",
+      "versions": [
+        "1.9.16"
+      ],
+      "id": 1240623,
+      "title": "@grpc/grpc-js: In certain configurations, getAuthContext can return unauthorized certificates as though they were authorized",
+      "severity": "high",
+      "vulnerableRange": "<1.13.6",
+      "url": "https://github.com/advisories/GHSA-m9gg-hp2v-232j",
+      "versionClassification": [
+        {
+          "name": "@grpc/grpc-js",
+          "version": "1.9.16",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "@grpc/grpc-js",
+      "versions": [
+        "1.9.16"
+      ],
+      "id": 1240625,
+      "title": "@grpc/grpc-js: The server transmits some error messages thrown by method handlers to the client in status messages",
+      "severity": "low",
+      "vulnerableRange": "<1.13.6",
+      "url": "https://github.com/advisories/GHSA-f596-whhp-79r4",
+      "versionClassification": [
+        {
+          "name": "@grpc/grpc-js",
+          "version": "1.9.16",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "@sveltejs/kit",
+      "versions": [
+        "2.69.1"
+      ],
+      "id": 1138740,
+      "title": "SvelteKit: ReDoS (O(n^2)) in content negotiation — unauthenticated DoS via the Accept header",
+      "severity": "moderate",
+      "vulnerableRange": "<=2.70.1",
+      "url": "https://github.com/advisories/GHSA-29g2-3rmr-qm68",
+      "versionClassification": [
+        {
+          "name": "@sveltejs/kit",
+          "version": "2.69.1",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "@tiptap/core",
+      "versions": [
+        "3.27.1"
+      ],
+      "id": 1158508,
+      "title": "Tiptap: mergeAttributes() turns an own __proto__ key into inherited executable DOM attributes",
+      "severity": "moderate",
+      "vulnerableRange": ">=2.0.0-alpha.0 <3.30.4",
+      "url": "https://github.com/advisories/GHSA-cp6q-959q-f8rh",
+      "versionClassification": [
+        {
+          "name": "@tiptap/core",
+          "version": "3.27.1",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "@tiptap/core",
+      "versions": [
+        "3.27.1"
+      ],
+      "id": 1193728,
+      "title": "Tiptap: Quadratic ReDoS in block and inline Markdown attribute parsing",
+      "severity": "high",
+      "vulnerableRange": ">=3.7.0 <3.30.5",
+      "url": "https://github.com/advisories/GHSA-j95f-988m-3j2f",
+      "versionClassification": [
+        {
+          "name": "@tiptap/core",
+          "version": "3.27.1",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "brace-expansion",
+      "versions": [
+        "5.0.9"
+      ],
+      "id": 1240107,
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "severity": "high",
+      "vulnerableRange": ">=4.0.0 <5.0.11",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "versionClassification": [
+        {
+          "name": "brace-expansion",
+          "version": "5.0.9",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "brace-expansion",
+      "versions": [
+        "5.0.9"
+      ],
+      "id": 1240111,
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "severity": "high",
+      "vulnerableRange": ">=4.0.0 <5.0.10",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "versionClassification": [
+        {
+          "name": "brace-expansion",
+          "version": "5.0.9",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "brace-expansion",
+      "versions": [
+        "5.0.9"
+      ],
+      "id": 1240103,
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "severity": "moderate",
+      "vulnerableRange": ">=4.0.0 <5.0.12",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "versionClassification": [
+        {
+          "name": "brace-expansion",
+          "version": "5.0.9",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "cookie",
+      "versions": [
+        "0.6.0"
+      ],
+      "id": 1103907,
+      "title": "cookie accepts cookie name, path, and domain with out of bounds characters",
+      "severity": "low",
+      "vulnerableRange": "<0.7.0",
+      "url": "https://github.com/advisories/GHSA-pxg6-pf52-xh8x",
+      "versionClassification": [
+        {
+          "name": "cookie",
+          "version": "0.6.0",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1237790,
+      "title": "Svelte devalue: DoS via malformed input",
+      "severity": "moderate",
+      "vulnerableRange": "<5.9.1",
+      "url": "https://github.com/advisories/GHSA-9rgm-9g3h-6x36",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1240870,
+      "title": "devalue: `stringify`/`uneval` serialize shared memory",
+      "severity": "high",
+      "vulnerableRange": ">=5.1.0 <=5.9.2",
+      "url": "https://github.com/advisories/GHSA-j22f-vq7h-c4qm",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1240871,
+      "title": "devalue: Residual sparse-array CPU amplification in uneval",
+      "severity": "moderate",
+      "vulnerableRange": "<=5.9.2",
+      "url": "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1240872,
+      "title": "devalue: Repeated primitive strings cause quadratic expansion in uneval",
+      "severity": "high",
+      "vulnerableRange": "<=5.9.2",
+      "url": "https://github.com/advisories/GHSA-mcm9-63f2-9j32",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1240873,
+      "title": "devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated",
+      "severity": "low",
+      "vulnerableRange": ">=1.0.0 <=5.9.2",
+      "url": "https://github.com/advisories/GHSA-wf3x-273g-mvxv",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1240874,
+      "title": "devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise",
+      "severity": "high",
+      "vulnerableRange": ">=5.8.0 <=5.9.2",
+      "url": "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "id": 1240875,
+      "title": "devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion",
+      "severity": "moderate",
+      "vulnerableRange": "<=5.9.2",
+      "url": "https://github.com/advisories/GHSA-4q55-j62x-fr9h",
+      "versionClassification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "nanoid",
+      "versions": [
+        "3.3.15"
+      ],
+      "id": 1138811,
+      "title": "nanoid: non-secure generators can loop indefinitely with negative size",
+      "severity": "high",
+      "vulnerableRange": "<3.3.16",
+      "url": "https://github.com/advisories/GHSA-28wg-ghj8-5hjv",
+      "versionClassification": [
+        {
+          "name": "nanoid",
+          "version": "3.3.15",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "nanoid",
+      "versions": [
+        "3.3.15"
+      ],
+      "id": 1139427,
+      "title": "nanoid: custom generators can loop indefinitely when size is zero",
+      "severity": "high",
+      "vulnerableRange": "<3.3.18",
+      "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+      "versionClassification": [
+        {
+          "name": "nanoid",
+          "version": "3.3.15",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "postcss",
+      "versions": [
+        "8.5.16"
+      ],
+      "id": 1130709,
+      "title": "PostCSS: incomplete fix of GHSA-6g55-p6wh-862q — attacker-controlled sourceMappingURL reads arbitrary .map files when `from` is unset",
+      "severity": "moderate",
+      "vulnerableRange": "<=8.5.22",
+      "url": "https://github.com/advisories/GHSA-fxqj-rqcc-2cmp",
+      "versionClassification": [
+        {
+          "name": "postcss",
+          "version": "8.5.16",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "postcss",
+      "versions": [
+        "8.5.16"
+      ],
+      "id": 1139510,
+      "title": "PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure",
+      "severity": "high",
+      "vulnerableRange": "<=8.5.17",
+      "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+      "versionClassification": [
+        {
+          "name": "postcss",
+          "version": "8.5.16",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "prosemirror-view",
+      "versions": [
+        "1.42.0"
+      ],
+      "id": 1241270,
+      "title": "ProseMirror has a XSS vulnerability in prosemirror-view's paste handling",
+      "severity": "high",
+      "vulnerableRange": "<1.42.3",
+      "url": "https://github.com/advisories/GHSA-c8x8-7fp4-3x9w",
+      "versionClassification": [
+        {
+          "name": "prosemirror-view",
+          "version": "1.42.0",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "protobufjs",
+      "versions": [
+        "7.6.4"
+      ],
+      "id": 1123964,
+      "title": "protobufjs: Denial of Service via infinite loop in .proto option parsing",
+      "severity": "moderate",
+      "vulnerableRange": ">=7.5.0 <=7.6.4",
+      "url": "https://github.com/advisories/GHSA-j3f2-48v5-ccww",
+      "versionClassification": [
+        {
+          "name": "protobufjs",
+          "version": "7.6.4",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "sharp",
+      "versions": [
+        "0.35.4"
+      ],
+      "id": 1241331,
+      "title": "sharp : Vulnerability in librsvg dependency CVE-2026-96889",
+      "severity": "high",
+      "vulnerableRange": "<0.35.5",
+      "url": "https://github.com/advisories/GHSA-wq5f-xc86-pv6w",
+      "versionClassification": [
+        {
+          "name": "sharp",
+          "version": "0.35.4",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": true,
+          "developmentOnlyObserved": false
+        }
+      ]
+    },
+    {
+      "package": "source-map-js",
+      "versions": [
+        "1.2.1"
+      ],
+      "id": 1241209,
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "severity": "high",
+      "vulnerableRange": ">=1.0.0 <1.2.2",
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "versionClassification": [
+        {
+          "name": "source-map-js",
+          "version": "1.2.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ]
+    }
+  ],
+  "affectedPackages": [
+    {
+      "name": "@grpc/grpc-js",
+      "versions": [
+        "1.9.16"
+      ],
+      "advisoryCount": 2,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "@grpc/grpc-js",
+          "version": "1.9.16",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1240623,
+          "vulnerableRange": "<1.13.6",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240625,
+          "vulnerableRange": "<1.13.6",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "@sveltejs/kit",
+      "versions": [
+        "2.69.1"
+      ],
+      "advisoryCount": 1,
+      "highestSeverity": "moderate",
+      "classification": [
+        {
+          "name": "@sveltejs/kit",
+          "version": "2.69.1",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1138740,
+          "vulnerableRange": "<=2.70.1",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "@tiptap/core",
+      "versions": [
+        "3.27.1"
+      ],
+      "advisoryCount": 2,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "@tiptap/core",
+          "version": "3.27.1",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1158508,
+          "vulnerableRange": ">=2.0.0-alpha.0 <3.30.4",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1193728,
+          "vulnerableRange": ">=3.7.0 <3.30.5",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "brace-expansion",
+      "versions": [
+        "5.0.9"
+      ],
+      "advisoryCount": 3,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "brace-expansion",
+          "version": "5.0.9",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1240107,
+          "vulnerableRange": ">=4.0.0 <5.0.11",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240111,
+          "vulnerableRange": ">=4.0.0 <5.0.10",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240103,
+          "vulnerableRange": ">=4.0.0 <5.0.12",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "cookie",
+      "versions": [
+        "0.6.0"
+      ],
+      "advisoryCount": 1,
+      "highestSeverity": "low",
+      "classification": [
+        {
+          "name": "cookie",
+          "version": "0.6.0",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1103907,
+          "vulnerableRange": "<0.7.0",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "devalue",
+      "versions": [
+        "5.8.1"
+      ],
+      "advisoryCount": 7,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "devalue",
+          "version": "5.8.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1237790,
+          "vulnerableRange": "<5.9.1",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240870,
+          "vulnerableRange": ">=5.1.0 <=5.9.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240871,
+          "vulnerableRange": "<=5.9.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240872,
+          "vulnerableRange": "<=5.9.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240873,
+          "vulnerableRange": ">=1.0.0 <=5.9.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240874,
+          "vulnerableRange": ">=5.8.0 <=5.9.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1240875,
+          "vulnerableRange": "<=5.9.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "nanoid",
+      "versions": [
+        "3.3.15"
+      ],
+      "advisoryCount": 2,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "nanoid",
+          "version": "3.3.15",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1138811,
+          "vulnerableRange": "<3.3.16",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1139427,
+          "vulnerableRange": "<3.3.18",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "postcss",
+      "versions": [
+        "8.5.16"
+      ],
+      "advisoryCount": 2,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "postcss",
+          "version": "8.5.16",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1130709,
+          "vulnerableRange": "<=8.5.22",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        },
+        {
+          "id": 1139510,
+          "vulnerableRange": "<=8.5.17",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "prosemirror-view",
+      "versions": [
+        "1.42.0"
+      ],
+      "advisoryCount": 1,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "prosemirror-view",
+          "version": "1.42.0",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1241270,
+          "vulnerableRange": "<1.42.3",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "protobufjs",
+      "versions": [
+        "7.6.4"
+      ],
+      "advisoryCount": 1,
+      "highestSeverity": "moderate",
+      "classification": [
+        {
+          "name": "protobufjs",
+          "version": "7.6.4",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1123964,
+          "vulnerableRange": ">=7.5.0 <=7.6.4",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "sharp",
+      "versions": [
+        "0.35.4"
+      ],
+      "advisoryCount": 1,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "sharp",
+          "version": "0.35.4",
+          "direct": true,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": false,
+          "optionalReachable": true,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1241331,
+          "vulnerableRange": "<0.35.5",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    },
+    {
+      "name": "source-map-js",
+      "versions": [
+        "1.2.1"
+      ],
+      "advisoryCount": 1,
+      "highestSeverity": "high",
+      "classification": [
+        {
+          "name": "source-map-js",
+          "version": "1.2.1",
+          "direct": false,
+          "transitive": true,
+          "productionReachable": true,
+          "developmentReachable": true,
+          "optionalReachable": false,
+          "developmentOnlyObserved": false
+        }
+      ],
+      "candidateExcludedBoundaries": [
+        {
+          "id": 1241209,
+          "vulnerableRange": ">=1.0.0 <1.2.2",
+          "caveat": "Range boundary is not proof of an available or safe fixed release."
+        }
+      ]
+    }
+  ],
+  "noGuardianSecurityPass": true,
+  "filesChangedInRepository": 0
+}

@@ -1,0 +1,156 @@
+
+> @nx1/guardian-lab@0.0.1 test C:\Users\DaniR\.codex\visualizations\2026\10\09\01a12251-4e43-7ce2-8dc5-e4b92fff3ee9\nx1-guardian
+> node --permission --allow-fs-read=. --allow-fs-write=.lab-tests --allow-fs-write=.lab-tests/* --test --test-isolation=none --test-concurrency=1 dist/test/*.test.js
+
+✖ FIX F01: invalid and duplicate concurrent dispatch leave owner state and controller intact (117.8001ms)
+✖ FIX F02: cross-worker stop cannot confirm active or uncertain durable execution (72.3788ms)
+✖ FIX F03: captured open approval cannot cross policy or independent ledger (107.6234ms)
+✖ FIX F03: captured emergency recovery cannot unlock another policy or ledger (86.7272ms)
+✖ FIX F04: canonical Ed25519 signature succeeds; all nonzero tail bits fail (25.955ms)
+✔ FIX F04: malformed, padded, wrong-key and altered-value signature vectors fail (24.8829ms)
+✔ positive: authenticated read has witnessed durable reservation and synthetic receipt (57.9822ms)
+✔ A01 A02 A05: malicious codex cannot exercise administration/secrets/deploy (71.8629ms)
+✔ A01 A02 A05: malicious chatgpt cannot exercise administration/secrets/deploy (73.3176ms)
+✔ A03 A04 A20: collusion, forged approvals and duplicate reviewer denied (29.4825ms)
+✔ A06: repository/log/web prompt text stays untrusted while allowed read remains bounded (60.2399ms)
+✔ A05 A26: closed canonical schemas reject mixed control, duplicate keys, oversized/version/unsafe inputs (77.9034ms)
+✔ A04 A09: wrong key, revoked identity and expired credential fail (114.4883ms)
+✔ A07: duplicate IDs, nonces, logical intents and replay after restart deny (92.8836ms)
+✔ A07 A12: concurrent admissions across two connections permit one reservation only (184.8917ms)
+✔ A08 A21: project/repository/branch/scope/parent substitution denied (69.6028ms)
+✔ A09: stolen or modified grant cannot dispatch as another synthetic actor (53.1998ms)
+✔ A10: downgraded digest/epoch or emergency epoch denied (55.6385ms)
+✔ A11 A22: durable stop fences reserved grant, survives restart, recovery never revives old session (112.2256ms)
+✔ A11 A22 A27: stop during stalled dispatch with ignored cancellation reports durable not enforced (90.8306ms)
+✔ A12 A13 A23: four iterations aggregate parent/child budget; fifth remains terminal after restart (205.4391ms)
+✔ A13 A23: cost/token maxima and unmeasurable synthetic reservation deny (99.9898ms)
+✔ A12 A23: sixteen signed forbidden attempts consume admission budget including retries (186.6755ms)
+✔ A14: lost receipt holds reservation and never auto retries after restart (71.5648ms)
+✔ A16 A24: append-only fixture rejects SQL updates and witness detects ledger corruption (29.615ms)
+✔ A16 A24: reordered/truncated audit and old witness are detected (36.9859ms)
+✔ A17 A22: witness persistence failure returns unconfirmed stop and never automatically clears fence (33.01ms)
+✔ A17 A25: unavailable mandatory witness denies effect and preserves committed reservation (34.1587ms)
+✔ A17: missing policy, invalid clock and stale checkpoint fail closed (72.8269ms)
+✔ A12: session deadline and stale lease bound work; expired reservation cannot be reused (64.9431ms)
+✔ A27: stall bounded complete response retains unknown effect accounting (76.8551ms)
+✔ A27: oversize bounded complete response retains unknown effect accounting (52.421ms)
+✔ A27: too-many-chunks bounded complete response retains unknown effect accounting (76.2835ms)
+✔ property: 32 deterministic mutations never produce unauthorized effects (328.4754ms)
+✔ strict runtime decision and emergency schemas reject unknown fields (0.288ms)
+✔ A20: two reviewer labels sharing one cryptographic identity are rejected (24.2136ms)
+✔ A07 A21: execution IDs cannot be resurrected in a separately approved session (68.0914ms)
+✔ A14: simulated crash after dispatch intent retains accounting after reopen and denies retry (54.8679ms)
+✔ A17: unavailable ledger denies effects even with a valid witnessed grant (32.9325ms)
+✔ A25: inconsistent witness and audit hashes are rejected (27.4836ms)
+✔ A23: SQLite held write transaction denies competing reservation without side effect (26.6895ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 36
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3217.3441
+
+✖ failing tests:
+
+test at dist\test\core.test.js:48:1
+✖ FIX F01: invalid and duplicate concurrent dispatch leave owner state and controller intact (117.8001ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '{"adminIds":["admin-1"],"epoch":0,"evidence":{"actors":["codex"],"intent":"466236de4e1b94faec4d865059d0259d2be11e2754276b92ba2181c5db0dfd44","reason":"ALLOW"},"lastNow":1000,"locked":false,"policy":{"agents":["codex","chatgpt"],"branch":"main","epoch":1,"expires":999999,"nx1Version":"1.3","operation":"fixture.read","project":"A","repository":"synthetic:repo-A","scope":"fixture:item"},"sessions":{"root":{"operations":{"op-2":{"grant":{"actor":"codex","binding":{"branch":"main","project":"A","repository":"synthetic:repo-A","scope":"fixture:item"},"budget":{"admissions":1,"cost":25,"iterations":1,"tokens":512},"emergencyEpoch":0,"execution":"op-2","expires":2000,"id":"16ec9762662784455680b2e02ca7446cab8862f193b3a313cb121f89d98365bf","operation":"fixture.read","policyDigest":"055c90e40f49212e2a94a9b856c17f593a079a4ff70fdcd2b1e98f6506f55f6b","policyEpoch":1,"session":"root"},"intentDigest":"038622b9d97d4cc5eb5d520db24705946c52210a05833b62cda847437de9f592","nonce":"00000000000000000000000000000002","requestDigest":"466236de4e1b94faec4d865059d0259d2be11e2754276b92ba2181c5db0dfd44","status":"UNKNOWN"}},"started":1000,"terminal":true,"used":{"admissions":1,"cost":25,"iterations":1,"tokens":512}}}}'
+  - '{"adminIds":["admin-1"],"epoch":0,"evidence":{"actors":["codex"],"intent":"466236de4e1b94faec4d865059d0259d2be11e2754276b92ba2181c5db0dfd44","reason":"ALLOW"},"lastNow":1000,"locked":false,"policy":{"agents":["codex","chatgpt"],"branch":"main","epoch":1,"expires":999999,"nx1Version":"1.3","operation":"fixture.read","project":"A","repository":"synthetic:repo-A","scope":"fixture:item"},"sessions":{"root":{"operations":{"op-2":{"grant":{"actor":"codex","binding":{"branch":"main","project":"A","repository":"synthetic:repo-A","scope":"fixture:item"},"budget":{"admissions":1,"cost":25,"iterations":1,"tokens":512},"emergencyEpoch":0,"execution":"op-2","expires":2000,"id":"16ec9762662784455680b2e02ca7446cab8862f193b3a313cb121f89d98365bf","operation":"fixture.read","policyDigest":"055c90e40f49212e2a94a9b856c17f593a079a4ff70fdcd2b1e98f6506f55f6b","policyEpoch":1,"session":"root"},"intentDigest":"038622b9d97d4cc5eb5d520db24705946c52210a05833b62cda847437de9f592","nonce":"00000000000000000000000000000002","requestDigest":"466236de4e1b94faec4d865059d0259d2be11e2754276b92ba2181c5db0dfd44","status":"DISPATCHING"}},"started":1000,"terminal":false,"used":{"admissions":1,"cost":25,"iterations":1,"tokens":512}}}}'
+  
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:55:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'thetic:repo-A","scope":"fixture:item"},"budget":{"admissions":1,"cost":25,"iterations":1,"tokens":512},"emergencyEpoch":0,"execution":"op-2","expires":2000,"id":"16ec9762662784455680b2e02ca7446cab8862f193b3a313cb121f89d98365bf","operation":"fixture.read","policyDigest":"055c90e40f49212e2a94a9b856c17f593a079a4ff70fdcd2b1e98f6506f55f6b","policyEpoch":1,"session":"root"},"intentDigest":"038622b9d97d4cc5eb5d520db24705946c52210a05833b62cda847437de9f592","nonce":"00000000000000000000000000000002","requestDigest":"466236de4e1b94faec4d865059d0259d2be11e2754276b92ba2181c5db0dfd44","status":"UNKNOWN"}},"started":1000,"terminal":true,"used":{"admissions":1,"cost":25,"iterations":1,"tokens":512}}}}...',
+    expected: 'thetic:repo-A","scope":"fixture:item"},"budget":{"admissions":1,"cost":25,"iterations":1,"tokens":512},"emergencyEpoch":0,"execution":"op-2","expires":2000,"id":"16ec9762662784455680b2e02ca7446cab8862f193b3a313cb121f89d98365bf","operation":"fixture.read","policyDigest":"055c90e40f49212e2a94a9b856c17f593a079a4ff70fdcd2b1e98f6506f55f6b","policyEpoch":1,"session":"root"},"intentDigest":"038622b9d97d4cc5eb5d520db24705946c52210a05833b62cda847437de9f592","nonce":"00000000000000000000000000000002","requestDigest":"466236de4e1b94faec4d865059d0259d2be11e2754276b92ba2181c5db0dfd44","status":"DISPATCHING"}},"started":1000,"terminal":false,"used":{"admissions":1,"cost":25,"iterations":1,"tokens":512}}}}...',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at dist\test\core.test.js:68:1
+✖ FIX F02: cross-worker stop cannot confirm active or uncertain durable execution (72.3788ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'STOP_ENFORCED'
+  - 'STOP_DURABLE'
+          ^
+  
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:75:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'STOP_ENFORCED',
+    expected: 'STOP_DURABLE',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at dist\test\core.test.js:88:1
+✖ FIX F03: captured open approval cannot cross policy or independent ledger (107.6234ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (GuardianError).
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:95:20)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [class GuardianError extends Error],
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at dist\test\core.test.js:105:1
+✖ FIX F03: captured emergency recovery cannot unlock another policy or ledger (86.7272ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (GuardianError).
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:112:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [class GuardianError extends Error],
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at dist\test\core.test.js:120:1
+✖ FIX F04: canonical Ed25519 signature succeeds; all nonzero tail bits fail (25.955ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///C:/Users/DaniR/.codex/visualizations/2026/10/09/01a12251-4e43-7ce2-8dc5-e4b92fff3ee9/nx1-guardian/dist/test/core.test.js:129:20)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+ ELIFECYCLE  Test failed. See above for more details.

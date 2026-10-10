@@ -1,0 +1,89 @@
+{
+  "schema": "guardian-reaudit-evidence/1",
+  "nx1Version": "1.3",
+  "iteration": "GUARDIAN-G02A-0-REAUDIT-01",
+  "result": "CONDITIONAL_PASS",
+  "head": "UNBORN",
+  "tree": null,
+  "branch": "main",
+  "artifactManifestSha256": "762f34556bf39a5ecb7785567c32a7d3f1248caccb572c662907b9f390ebea25",
+  "protectedArtifacts": 22,
+  "preservationVerified": true,
+  "tests": {
+    "skipped": 0,
+    "failed": 0,
+    "executed": 48,
+    "passed": 48,
+    "cancelled": 0
+  },
+  "probes": {
+    "groups": 10,
+    "violations": 2,
+    "signatureVectors": 370,
+    "passed": 8,
+    "harnessErrors": 0
+  },
+  "newFindings": {
+    "R01": "P2_early_emergency_evidence_read_failure",
+    "R02": "P2_nonboolean_cancellation_acknowledgments"
+  },
+  "reviewers": {
+    "parent": "Same_assistant_as_implementer",
+    "separateAgent": "/root/reaudit_reviewer",
+    "classification": "NON_EXTERNAL_SHARED_ENVIRONMENT",
+    "externalAttestation": false
+  },
+  "sourceDistParity": 12,
+  "traceabilityRows": 58,
+  "protectedCheckoutFilesChanged": 0,
+  "networkRequests": 0,
+  "realProviderRequests": 0,
+  "remoteWrites": 0,
+  "readiness": "G02A0_CONDITIONAL_PENDING_R01_R02_DISPOSITION;G02A1_REQUIRES_SEPARATE_AUTHORIZATION;PRODUCTION_BLOCKED",
+  "evidence": [
+    {
+      "path": "G02A-REAUDIT-01-report.md",
+      "sha256": "ebc018ae8f93e0e7756de6cf2e336704f8a1908b513f66b88ef7cae541f5ad69"
+    },
+    {
+      "path": "G02A-REAUDIT-01-probe-results.json",
+      "sha256": "831f8c585c8f377eeca7a490cf9bcdaf0a31a9ec24a088e863c475454971f910"
+    },
+    {
+      "path": "G02A-REAUDIT-01-probes.mjs",
+      "sha256": "eebab30c874dd0465f8fba787e050fe5fd5f339fda09df656b7c3232926dd78c"
+    },
+    {
+      "path": "G02A-REAUDIT-01-verify.mjs",
+      "sha256": "9671d1107759d5ba241fdf2ac76cf3ee446d36ffc08f9c5912522f164ea36b34"
+    },
+    {
+      "path": "G02A-REAUDIT-01-baseline-before.json",
+      "sha256": "cf3437bf753d8f60408bb43f7c7b1de5b42582b2d8c45f2b6f788ecb95f1397d"
+    },
+    {
+      "path": "G02A-REAUDIT-01-baseline-after.json",
+      "sha256": "71b0fbdb7bf2db7cdf2a1e41320cedf170c3419830bbd71147503ace4913dc36"
+    },
+    {
+      "path": "G02A-REAUDIT-01-tests.log",
+      "sha256": "6bf197cb9a5b45d73a5bc14e7831628b2f72890ae01951bcb3dba7df65394910"
+    },
+    {
+      "path": "G02A-REAUDIT-01-typecheck.log",
+      "sha256": "d4524b68a07232d572ab6b2398edc1c4689225ab039c1b49204141dbb0b8c3c8"
+    },
+    {
+      "path": "G02A-REAUDIT-01-lint.log",
+      "sha256": "c318e2fe4271264e46265351a279bab85d84f0b29186f894f81f9a1d70b22f64"
+    },
+    {
+      "path": "G02A-REAUDIT-01-probes.log",
+      "sha256": "2d41632ae0218272b11fff15d9f593639532f9179e97bc6de2bfaf965ce70e69"
+    },
+    {
+      "path": "G02A-REAUDIT-01-preservation.log",
+      "sha256": "704016663b2f3bfe8f17ff3cd0532a4670aa0fcd7cca23f8820b307c99074591"
+    }
+  ]
+}

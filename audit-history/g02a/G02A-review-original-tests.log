@@ -1,0 +1,47 @@
+
+> @nx1/guardian-lab@0.0.1 test C:\Users\DaniR\.codex\visualizations\2026\10\09\01a12251-4e43-7ce2-8dc5-e4b92fff3ee9\nx1-guardian
+> node --permission --allow-fs-read=. --allow-fs-write=.lab-tests --allow-fs-write=.lab-tests/* --test --test-isolation=none --test-concurrency=1 dist/test/*.test.js
+
+✔ positive: authenticated read has witnessed durable reservation and synthetic receipt (68.8154ms)
+✔ A01 A02 A05: malicious codex cannot exercise administration/secrets/deploy (75.6828ms)
+✔ A01 A02 A05: malicious chatgpt cannot exercise administration/secrets/deploy (67.1287ms)
+✔ A03 A04 A20: collusion, forged approvals and duplicate reviewer denied (28.3916ms)
+✔ A06: repository/log/web prompt text stays untrusted while allowed read remains bounded (53.6872ms)
+✔ A05 A26: closed canonical schemas reject mixed control, duplicate keys, oversized/version/unsafe inputs (76.2333ms)
+✔ A04 A09: wrong key, revoked identity and expired credential fail (112.2173ms)
+✔ A07: duplicate IDs, nonces, logical intents and replay after restart deny (87.8881ms)
+✔ A07 A12: concurrent admissions across two connections permit one reservation only (191.6716ms)
+✔ A08 A21: project/repository/branch/scope/parent substitution denied (75.348ms)
+✔ A09: stolen or modified grant cannot dispatch as another synthetic actor (49.7251ms)
+✔ A10: downgraded digest/epoch or emergency epoch denied (53.313ms)
+✔ A11 A22: durable stop fences reserved grant, survives restart, recovery never revives old session (115.9051ms)
+✔ A11 A22 A27: stop during stalled dispatch with ignored cancellation reports durable not enforced (104.6176ms)
+✔ A12 A13 A23: four iterations aggregate parent/child budget; fifth remains terminal after restart (168.8156ms)
+✔ A13 A23: cost/token maxima and unmeasurable synthetic reservation deny (95.1966ms)
+✔ A12 A23: sixteen signed forbidden attempts consume admission budget including retries (180.9134ms)
+✔ A14: lost receipt holds reservation and never auto retries after restart (72.8763ms)
+✔ A16 A24: append-only fixture rejects SQL updates and witness detects ledger corruption (30.2467ms)
+✔ A16 A24: reordered/truncated audit and old witness are detected (36.7673ms)
+✔ A17 A22: witness persistence failure returns unconfirmed stop and never automatically clears fence (33.439ms)
+✔ A17 A25: unavailable mandatory witness denies effect and preserves committed reservation (33.7075ms)
+✔ A17: missing policy, invalid clock and stale checkpoint fail closed (78.2393ms)
+✔ A12: session deadline and stale lease bound work; expired reservation cannot be reused (62.8393ms)
+✔ A27: stall bounded complete response retains unknown effect accounting (80.8408ms)
+✔ A27: oversize bounded complete response retains unknown effect accounting (55.2274ms)
+✔ A27: too-many-chunks bounded complete response retains unknown effect accounting (78.0602ms)
+✔ property: 32 deterministic mutations never produce unauthorized effects (347.7071ms)
+✔ strict runtime decision and emergency schemas reject unknown fields (0.3235ms)
+✔ A20: two reviewer labels sharing one cryptographic identity are rejected (27.8394ms)
+✔ A07 A21: execution IDs cannot be resurrected in a separately approved session (70.0953ms)
+✔ A14: simulated crash after dispatch intent retains accounting after reopen and denies retry (53.7707ms)
+✔ A17: unavailable ledger denies effects even with a valid witnessed grant (35.5634ms)
+✔ A25: inconsistent witness and audit hashes are rejected (30.449ms)
+✔ A23: SQLite held write transaction denies competing reservation without side effect (27.8163ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2787.7289
