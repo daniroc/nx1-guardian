@@ -1,0 +1,128 @@
+{
+  "schema": "guardian-reaudit-probes/1",
+  "nx1Version": "1.3",
+  "networkRequests": 0,
+  "realCredentials": 0,
+  "protectedCheckoutWrites": 0,
+  "groups": 15,
+  "passed": 14,
+  "violations": 0,
+  "harnessErrors": 0,
+  "probes": [
+    {
+      "id": "P01",
+      "area": "F01",
+      "status": "PASS",
+      "attempts": 64,
+      "ownerAttempts": 1,
+      "ownerControllerRetained": true
+    },
+    {
+      "id": "P02",
+      "area": "F01 failure/SQL contention",
+      "status": "PASS",
+      "busyWriterDenied": true,
+      "ownerUnchanged": true
+    },
+    {
+      "id": "P03",
+      "area": "F02 shared pending/restart/recovery",
+      "status": "PASS",
+      "completedAfterDurableStop": 1,
+      "staleGrantEffects": 0,
+      "unknownHoldsAfterRestart": true
+    },
+    {
+      "id": "P04",
+      "area": "F02 acknowledgement validation",
+      "status": "PASS",
+      "returned": "STOP_DURABLE",
+      "asyncFalseAcknowledgements": true
+    },
+    {
+      "id": "P05",
+      "area": "F03 context/substitution/canonicalization",
+      "status": "PASS",
+      "rejected": 19
+    },
+    {
+      "id": "P06",
+      "area": "F03 emergency recovery",
+      "status": "PASS",
+      "crossPolicyDenied": true,
+      "oldLockEpochDenied": true,
+      "reopenApprovalValidOnlyForOriginalContext": true
+    },
+    {
+      "id": "P07",
+      "area": "F04 crypto-before-verification instrumentation",
+      "status": "PASS",
+      "vectors": 370,
+      "tailAliasesRejectedBeforeVerify": 240,
+      "malformedRejectedBeforeVerify": 96,
+      "validSynthetic": 16,
+      "rfc8032EmptyMessageRawVector": true,
+      "domainSeparation": true
+    },
+    {
+      "id": "P08",
+      "area": "audit missing entry/failure recovery",
+      "status": "PASS",
+      "truncatedChainDetectedAcrossReopen": true
+    },
+    {
+      "id": "P09",
+      "area": "F01 mandatory-witness failure at dispatch intent",
+      "status": "PASS",
+      "providerAttempts": 0,
+      "unwitnessedIntentFailClosedAcrossReopen": true
+    },
+    {
+      "id": "P10",
+      "area": "R01 early read failure containment/recovery",
+      "status": "PASS",
+      "localAbort": true,
+      "recoveredEvidence": true,
+      "noDurableLockClaim": true
+    },
+    {
+      "id": "P11",
+      "area": "fallback fence restart characterization",
+      "status": "KNOWN_LIMITATION_REPRODUCED",
+      "persistedIncident": true,
+      "lockPersisted": false,
+      "dispatchAfterRestart": 1,
+      "residual": "B02-R01: recorded fallback is not a durable kill lock",
+      "severity": "P2"
+    },
+    {
+      "id": "P12",
+      "area": "R02 strict primitive boolean matrix",
+      "status": "PASS",
+      "ambiguousVectors": 22,
+      "positiveVectors": 1,
+      "exceptionVector": 1
+    },
+    {
+      "id": "P13",
+      "area": "bridge offline boundary and Unicode vectors",
+      "status": "PASS",
+      "vectors": 16,
+      "semanticInjectionIsUntrustedData": true,
+      "noSender": true
+    },
+    {
+      "id": "P14",
+      "area": "R01 unauthenticated and substituted cached STOP",
+      "status": "PASS",
+      "deniedCommands": 5,
+      "ownerUnaffected": true
+    },
+    {
+      "id": "P15",
+      "area": "R01 expired verified cache cannot confer authority",
+      "status": "PASS",
+      "expiredCacheDenied": true
+    }
+  ]
+}
